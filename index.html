@@ -7,6 +7,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="Awaiken" />
+    <link rel="preload" href="images/hero-bg.jpg">
     <title>Builtup - Construction HTML Template</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 
@@ -39,21 +40,29 @@
         onload="this.media = 'all'"
       />
     </noscript>
+    <style>
+      .bg-image {
+        inset: 0;
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+      }
+    </style>
   </head>
   <body>
-    <div class="preloader">
+    <!-- <div class="preloader">
       <div class="loading-container">
         <div class="loading"></div>
         <div id="loading-icon"><img src="images/loader.svg" alt="" /></div>
       </div>
-    </div>
+    </div> -->
 
     <header class="main-header">
       <div class="header-sticky">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <a class="navbar-brand" href="index-2.html">
-              <img src="images/logo.svg" alt="Logo" />
+              <img src="images/logo.svg" alt="Logo" decoding="async" />
             </a>
             <div class="collapse navbar-collapse main-menu">
               <div class="nav-menu-wrapper">
@@ -131,17 +140,18 @@
       </div>
     </header>
 
-    <div class="hero bg-section parallaxie">
+    <div class="hero bg-section position-relative">
+      <img src="images/hero-bg.jpg" class="bg-image" decoding="sync" fetchpriority="high" alt="">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-12">
             <div class="hero-content">
               <div class="section-title">
-                <h3 class="wow fadeInUp">welcome to builtup</h3>
-                <h1 class="text-anime-style-3" data-cursor="-opaque">
+                <h3 >welcome to builtup</h3>
+                <h1  >
                   Building dreams with precision and excellence
                 </h1>
-                <p class="wow fadeInUp" data-wow-delay="0.25s">
+                <p >
                   we specialize in turning visions into reality with exceptional
                   craftsmanship and meticulous attention to detail. With years
                   of experience and a commitment to quality.
@@ -166,7 +176,7 @@
             <div class="about-image">
               <div class="about-img">
                 <figure class="reveal">
-                  <img src="images/about-us-img.png" alt="" />
+                  <img src="images/about-us-img.png" alt="" loading="lazy" decoding="async" />
                 </figure>
               </div>
             </div>
@@ -207,7 +217,7 @@
                 </div>
                 <div class="about-contact-support">
                   <div class="icon-box">
-                    <img src="images/icon-phone.svg" alt="" />
+                    <img src="images/icon-phone.svg" alt="" loading="lazy" decoding="async" />
                   </div>
                   <div class="about-support-content">
                     <p>call support center 24X7</p>
@@ -244,7 +254,7 @@
                 <div class="service-image" data-cursor-text="View">
                   <a href="#">
                     <figure>
-                      <img src="images/service-img-1.jpg" alt="" />
+                      <img src="images/service-img-1.jpg" alt="" loading="lazy" decoding="async" />
                     </figure>
                   </a>
                 </div>
@@ -271,7 +281,7 @@
                 <div class="service-image" data-cursor-text="View">
                   <a href="#">
                     <figure>
-                      <img src="images/service-img-2.jpg" alt="" />
+                      <img src="images/service-img-2.jpg" alt="" loading="lazy" decoding="async" />
                     </figure>
                   </a>
                 </div>
@@ -297,7 +307,7 @@
                 <div class="service-image" data-cursor-text="View">
                   <a href="#">
                     <figure>
-                      <img src="images/service-img-3.jpg" alt="" />
+                      <img src="images/service-img-3.jpg" alt="" loading="lazy" decoding="async" />
                     </figure>
                   </a>
                 </div>
@@ -323,7 +333,7 @@
                 <div class="service-image" data-cursor-text="View">
                   <a href="#">
                     <figure>
-                      <img src="images/service-img-4.jpg" alt="" />
+                      <img src="images/service-img-4.jpg" alt="" loading="lazy" decoding="async" />
                     </figure>
                   </a>
                 </div>
@@ -371,7 +381,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
               <div class="icon-box">
-                <img src="images/icon-why-choose-1.svg" alt="" />
+                <img src="images/icon-why-choose-1.svg" alt="" loading="lazy" decoding="async" />
               </div>
               <div class="why-choose-content">
                 <h3>innovation solutions</h3>
@@ -391,7 +401,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="why-choose-image">
               <figure class="image-anime reveal">
-                <img src="images/why-choose-img-1.jpg" alt="" />
+                <img src="images/why-choose-img-1.jpg" alt="" loading="lazy" decoding="async" />
               </figure>
             </div>
           </div>
@@ -399,7 +409,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
               <div class="icon-box">
-                <img src="images/icon-why-choose-2.svg" alt="" />
+                <img src="images/icon-why-choose-2.svg" alt="" loading="lazy" decoding="async" />
               </div>
               <div class="why-choose-content">
                 <h3>quality craftsmanship</h3>
@@ -419,7 +429,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="why-choose-image">
               <figure class="image-anime reveal">
-                <img src="images/why-choose-img-2.jpg" alt="" />
+                <img src="images/why-choose-img-2.jpg" alt="" loading="lazy" decoding="async" />
               </figure>
             </div>
           </div>
@@ -427,7 +437,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
               <div class="icon-box">
-                <img src="images/icon-why-choose-3.svg" alt="" />
+                <img src="images/icon-why-choose-3.svg" alt="" loading="lazy" decoding="async" />
               </div>
               <div class="why-choose-content">
                 <h3>expertise and experience</h3>
@@ -447,7 +457,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="why-choose-image">
               <figure class="image-anime reveal">
-                <img src="images/why-choose-img-3.jpg" alt="" />
+                <img src="images/why-choose-img-3.jpg" alt="" loading="lazy" decoding="async" />
               </figure>
             </div>
           </div>
@@ -478,7 +488,7 @@
                 <div class="project-image" data-cursor-text="View">
                   <a href="#">
                     <figure>
-                      <img src="images/our-project-1.jpg" alt="" />
+                      <img src="images/our-project-1.jpg" alt="" loading="lazy" decoding="async" />
                     </figure>
                   </a>
                 </div>
@@ -504,7 +514,7 @@
                 <div class="project-image" data-cursor-text="View">
                   <a href="#">
                     <figure>
-                      <img src="images/our-project-2.jpg" alt="" />
+                      <img src="images/our-project-2.jpg" alt="" loading="lazy" decoding="async" />
                     </figure>
                   </a>
                 </div>
@@ -530,7 +540,7 @@
                 <div class="project-image" data-cursor-text="View">
                   <a href="#">
                     <figure>
-                      <img src="images/our-project-3.jpg" alt="" />
+                      <img src="images/our-project-3.jpg" alt="" loading="lazy" decoding="async" />
                     </figure>
                   </a>
                 </div>
@@ -556,7 +566,7 @@
                 <div class="project-image" data-cursor-text="View">
                   <a href="#">
                     <figure>
-                      <img src="images/our-project-4.jpg" alt="" />
+                      <img src="images/our-project-4.jpg" alt="" loading="lazy" decoding="async" />
                     </figure>
                   </a>
                 </div>
@@ -606,7 +616,7 @@
           <div class="col-lg-5 col-md-4">
             <div class="cta-box-image">
               <figure>
-                <img src="images/cta-box-img.png" alt="" />
+                <img src="images/cta-box-img.png" alt="" loading="lazy" decoding="async" />
               </figure>
             </div>
           </div>
@@ -658,7 +668,7 @@
                       <div class="testimonial-body">
                         <div class="author-image">
                           <figure class="image-anime">
-                            <img src="images/author-1.jpg" alt="" />
+                            <img src="images/author-1.jpg" alt="" loading="lazy" decoding="async" />
                           </figure>
                         </div>
                         <div class="author-content">
@@ -691,7 +701,7 @@
                       <div class="testimonial-body">
                         <div class="author-image">
                           <figure class="image-anime">
-                            <img src="images/author-2.jpg" alt="" />
+                            <img src="images/author-2.jpg" alt="" loading="lazy" decoding="async" />
                           </figure>
                         </div>
                         <div class="author-content">
@@ -724,7 +734,7 @@
                       <div class="testimonial-body">
                         <div class="author-image">
                           <figure class="image-anime">
-                            <img src="images/author-3.jpg" alt="" />
+                            <img src="images/author-3.jpg" alt="" loading="lazy" decoding="async" />
                           </figure>
                         </div>
                         <div class="author-content">
@@ -757,7 +767,7 @@
                       <div class="testimonial-body">
                         <div class="author-image">
                           <figure class="image-anime">
-                            <img src="images/author-4.jpg" alt="" />
+                            <img src="images/author-4.jpg" alt="" loading="lazy" decoding="async" />
                           </figure>
                         </div>
                         <div class="author-content">
@@ -800,14 +810,14 @@
                 <div class="col-md-6 col-6">
                   <div class="faqs-img-1">
                     <figure class="image-anime reveal">
-                      <img src="images/our-faqs-img-1.jpg" alt="" />
+                      <img src="images/our-faqs-img-1.jpg" alt="" loading="lazy" decoding="async" />
                     </figure>
                   </div>
                 </div>
                 <div class="col-md-6 col-6">
                   <div class="faqs-img-2">
                     <figure class="image-anime reveal">
-                      <img src="images/our-faqs-img-2.jpg" alt="" />
+                      <img src="images/our-faqs-img-2.jpg" alt="" loading="lazy" decoding="async" />
                     </figure>
                   </div>
                 </div>
@@ -817,21 +827,21 @@
                 <div class="col-md-6 col-6">
                   <div class="faqs-img-1">
                     <figure class="image-anime reveal">
-                      <img src="images/our-faqs-img-3.jpg" alt="" />
+                      <img src="images/our-faqs-img-3.jpg" alt="" loading="lazy" decoding="async" />
                     </figure>
                   </div>
                 </div>
                 <div class="col-md-6 col-6">
                   <div class="faqs-img-2">
                     <figure class="image-anime reveal">
-                      <img src="images/our-faqs-img-4.jpg" alt="" />
+                      <img src="images/our-faqs-img-4.jpg" alt="" loading="lazy" decoding="async" />
                     </figure>
                   </div>
                 </div>
               </div>
 
               <div class="our-faqs-bulitup">
-                <img src="images/icon-faq-bulitup.svg" alt="" />
+                <img src="images/icon-faq-bulitup.svg" alt="" loading="lazy" decoding="async" />
               </div>
             </div>
           </div>
@@ -974,7 +984,7 @@
               <div class="post-featured-image" data-cursor-text="View">
                 <figure>
                   <a href="#" class="image-anime">
-                    <img src="images/post-1.jpg" alt="" />
+                    <img src="images/post-1.jpg" alt="" loading="lazy" decoding="async" />
                   </a>
                 </figure>
               </div>
@@ -998,7 +1008,7 @@
               <div class="post-featured-image" data-cursor-text="View">
                 <figure>
                   <a href="#" class="image-anime">
-                    <img src="images/post-2.jpg" alt="" />
+                    <img src="images/post-2.jpg" alt="" loading="lazy" decoding="async" />
                   </a>
                 </figure>
               </div>
@@ -1022,7 +1032,7 @@
               <div class="post-featured-image" data-cursor-text="View">
                 <figure>
                   <a href="#" class="image-anime">
-                    <img src="images/post-3.jpg" alt="" />
+                    <img src="images/post-3.jpg" alt="" loading="lazy" decoding="async" />
                   </a>
                 </figure>
               </div>
@@ -1050,7 +1060,7 @@
             <div class="contact-sidebar wow fadeInUp" data-wow-delay="0.25s">
               <div class="contact-info">
                 <div class="icon-box">
-                  <img src="images/icon-phone.svg" alt="" />
+                  <img src="images/icon-phone.svg" alt="" loading="lazy" decoding="async" />
                 </div>
                 <div class="contact-info-content">
                   <p>call support center 24/7</p>
@@ -1059,7 +1069,7 @@
               </div>
               <div class="contact-info">
                 <div class="icon-box">
-                  <img src="images/icon-mail.svg" alt="" />
+                  <img src="images/icon-mail.svg" alt="" loading="lazy" decoding="async" />
                 </div>
                 <div class="contact-info-content">
                   <p>write to us</p>
@@ -1069,7 +1079,7 @@
 
               <div class="contact-info-image">
                 <figure>
-                  <img src="images/contact-info-img.png" alt="" />
+                  <img src="images/contact-info-img.png" alt="" loading="lazy" decoding="async" />
                 </figure>
               </div>
             </div>
@@ -1168,7 +1178,7 @@
             <div class="about-footer">
               <div class="footer-logo">
                 <figure>
-                  <img src="images/footer-logo.svg" alt="" />
+                  <img src="images/footer-logo.svg" alt="" loading="lazy" decoding="async" />
                 </figure>
               </div>
 
@@ -1212,21 +1222,21 @@
               <h3>contact us</h3>
               <div class="footer-info-box">
                 <div class="icon-box">
-                  <img src="images/icon-phone.svg" alt="" />
+                  <img src="images/icon-phone.svg" alt="" loading="lazy" decoding="async" />
                 </div>
                 <p>+1 809 120 6705</p>
               </div>
 
               <div class="footer-info-box">
                 <div class="icon-box">
-                  <img src="images/icon-mail.svg" alt="" />
+                  <img src="images/icon-mail.svg" alt="" loading="lazy" decoding="async" />
                 </div>
                 <p>info@domain.com</p>
               </div>
 
               <div class="footer-info-box">
                 <div class="icon-box">
-                  <img src="images/icon-location.svg" alt="" />
+                  <img src="images/icon-location.svg" alt="" loading="lazy" decoding="async" />
                 </div>
                 <p>37 San Juan Lane Graaf Florisstraat 22A,3021 CH</p>
               </div>
