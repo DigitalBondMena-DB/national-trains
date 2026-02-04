@@ -8,19 +8,35 @@
         }),
         e(".active-sticky-header").length)
     ) {
-        function t() {
-            e("header.main-header").css("height", e("header .header-sticky").outerHeight());
-        }
-        a.on("resize", function () {
-            t();
-        }),
-            e(window).on("scroll", function () {
-                var a = e(window).scrollTop();
-                t();
-                var i = e("header .header-sticky").outerHeight();
-                e("header .header-sticky").toggleClass("hide", a > i + 100),
-                    e("header .header-sticky").toggleClass("active", a > 600);
-            });
+    function debounce(func, wait, immediate) {
+        var timeout;
+        return function() {
+            var context = this, args = arguments;
+            var later = function() {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    };
+
+    function t() {
+        e("header.main-header").css("height", e("header .header-sticky").outerHeight());
+    }
+
+    var debouncedScroll = debounce(function() {
+        var a = e(window).scrollTop();
+        t();
+        var i = e("header .header-sticky").outerHeight();
+        e("header .header-sticky").toggleClass("hide", a > i + 100),
+            e("header .header-sticky").toggleClass("active", a > 600);
+    }, 10);
+
+    a.on("resize", t);
+    e(window).on("scroll", debouncedScroll);
     }
     new Swiper(".hero-slider-layout .swiper", {
         slidesPerView: 1,
@@ -88,4 +104,20 @@
                 },
             }));
     });
+    if (e(".main-menu").length && e(".responsive-menu").length) {
+        var menuContent = e(".main-menu .nav-menu-wrapper").html();
+        e(".responsive-menu").append(menuContent);
+
+        e(".navbar-toggle").on("click", function() {
+            e(this).toggleClass("active");
+            e(".responsive-menu").toggleClass("active");
+            e(".body-overlay").toggleClass("active");
+        });
+
+        e(".body-overlay").on("click", function() {
+            e(".navbar-toggle").removeClass("active");
+            e(".responsive-menu").removeClass("active");
+            e(this).removeClass("active");
+        });
+    }
 })(jQuery);
