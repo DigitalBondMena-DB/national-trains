@@ -33,6 +33,11 @@
         var i = e("header .header-sticky").outerHeight();
         e("header .header-sticky").toggleClass("hide", a > i + 100),
             e("header .header-sticky").toggleClass("active", a > 600);
+            if (a > 600) { 
+        e("#mainLogo").attr("src", "images/white-logo.png");
+    } else {
+        e("#mainLogo").attr("src", "images/logo.png");
+    }
     }, 10);
 
     a.on("resize", t);
