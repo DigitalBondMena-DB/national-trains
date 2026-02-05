@@ -1,8 +1,9 @@
 :root {
-  --primary-color: #1b449c;
+  --primary-color: #12223b;
   --secondary-color: #e9f7fe;
-  --text-color: #667282;
-  --accent-color: #f09419;
+  --text-color: #000;
+  --title-color: #002a57;
+  --accent-color: #ea9815;
   --white-color: #ffffff;
   --divider-color: #12223b30;
   --dark-divider-color: #ffffff20;
@@ -32,7 +33,7 @@ h6 {
   margin: 0;
   font-family: var(--accent-font);
   font-weight: 800;
-  color: var(--primary-color);
+  color: var(--title-color);
   line-height: 1.3em;
 }
 figure {
@@ -169,12 +170,6 @@ body {
   text-align: center;
   margin-bottom: 0;
 }
-.section-row .section-title p {
-  width: 100%;
-  max-width: 850px;
-  margin: 0 auto;
-  margin-top: 30px;
-}
 .section-btn {
   line-height: 0.8em;
 }
@@ -258,33 +253,6 @@ header.main-header .header-sticky.active {
 .main-menu ul li a:hover,
 .main-menu ul li a:focus {
   color: var(--accent-color);
-}
-.main-menu ul ul {
-  visibility: hidden;
-  opacity: 0;
-  transform: scaleY(0.8);
-  transform-origin: top;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  width: 210px;
-  border-radius: 15px;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  overflow: hidden;
-  background-color: var(--accent-color);
-  transition: all 0.3s ease-in-out;
-  text-align: left;
-}
-.main-menu ul ul li {
-  margin: 0;
-  padding: 0;
-}
-.main-menu ul ul li a {
-  color: var(--white-color);
-  padding: 8px 20px !important;
-  transition: all 0.3s ease-in-out;
 }
 .header-btn .btn-default {
   padding: 15px 20px;
