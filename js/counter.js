@@ -1,0 +1,46 @@
+(function () {
+  "use strict";
+
+  const counters = document.querySelectorAll(".counter");
+
+  if (counters.length > 0) {
+    const animateCounter = (counter) => {
+      const text = counter.innerText;
+      const decimalMatch = text.match(/\.([0-9]+)/);
+      const decimals = decimalMatch ? decimalMatch[1].length : 0;
+      const target = parseFloat(text);
+      const duration = 2000; // 2 seconds
+      const stepTime = 20;
+      const steps = duration / stepTime;
+      const increment = target / steps;
+      let current = 0;
+
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          counter.innerText = target.toFixed(decimals);
+          clearInterval(timer);
+        } else {
+          counter.innerText = current.toFixed(decimals);
+        }
+      }, stepTime);
+    };
+
+    const observerOptions = {
+      threshold: 1.0,
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    counters.forEach((counter) => {
+      observer.observe(counter);
+    });
+  }
+})();
