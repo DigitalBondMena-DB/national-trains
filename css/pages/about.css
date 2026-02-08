@@ -1,1 +1,152 @@
-.hero.bg-section.main-hero .home-content{padding-top:40px}.bread-crumb{display:flex;gap:10px;color:#fff;justify-content:center;align-items:center;margin-top:30px;font-size:18px;font-weight:700;& span:last-child{color:var(--accent-color)}}.our-mission-vision{padding:100px 0;@media only screen and (max-width:991px){padding:50px 0 20px}}.mission-vision-item{padding:30px;border:1px solid var(--divider-color);border-radius:40px;margin-top:10px;background-color:var(--white-color)}.mission-vision-item .icon-box{margin-bottom:30px}.mission-vision-item .mission-vision-content h3{font-size:24px;text-transform:capitalize;margin-bottom:30px}.mission-vision-item .mission-vision-content p{margin:0}.why-choose-content{border-bottom:1px solid var(--divider-color);margin-bottom:30px;padding-bottom:30px}.why-choose-content h3{font-size:24px;font-weight:700;text-transform:capitalize;margin-bottom:30px}.why-choose-content p{margin:0}@media only screen and (max-width:991px){.mission-vision-item .icon-box{margin-bottom:20px}.mission-vision-item .icon-box img{max-width:60px}.mission-vision-item .mission-vision-content h3{font-size:22px;margin-bottom:20px}.mission-vision-item{height:calc(100% - 30px);margin-bottom:30px}}@media only screen and (max-width:767px){.mission-vision-item{padding:20px}.mission-vision-item .icon-box{margin-bottom:15px}.mission-vision-item .mission-vision-content h3{font-size:20px;margin-bottom:15px}}.why-choose-us{padding:100px 0 70px;@media only screen and (max-width:991px){padding:50px 0 20px}}.why-choose-item{border:1px solid var(--divider-color);border-radius:40px;height:calc(100% - 30px);margin-bottom:30px;padding:30px}.why-choose-item .icon-box{margin-bottom:30px}.why-choose-item .icon-box img{max-width:70px}.why-choose-counter h3{font-size:56px;letter-spacing:-.03em;line-height:1.1em;margin-bottom:5px}.why-choose-counter p{text-transform:capitalize;margin:0}.why-choose-image{height:calc(100% - 30px);margin-bottom:30px}.why-choose-image figure,.why-choose-image img{height:100%;width:100%;border-radius:40px}.why-choose-image:hover img{filter:grayscale(80%)}.image-anime{position:relative;overflow:hidden}.image-anime:after{content:"";position:absolute;width:200%;height:0%;left:50%;top:50%;background-color:rgb(255 255 255 / .3);transform:translate(-50%,-50%) rotate(-45deg);z-index:1}.image-anime:hover:after{height:250%;transition:all 600ms linear;background-color:#fff0}@media only screen and (max-width:991px){.why-choose-item{padding:30px 20px}.why-choose-item .icon-box{margin-bottom:20px}.why-choose-item .icon-box img{max-width:60px}.why-choose-content{margin-bottom:20px;padding-bottom:20px}.why-choose-content h3{font-size:22px;margin-bottom:20px}.why-choose-counter h3{font-size:46px}}@media only screen and (max-width:767px){.why-choose-item{padding:20px}.why-choose-item .icon-box{margin-bottom:15px}.why-choose-content{margin-bottom:20px;padding-bottom:20px}.why-choose-content h3{font-size:22px;margin-bottom:20px}.why-choose-counter h3{font-size:36px}}
+.hero.bg-section.main-hero .home-content {
+  padding-top: 40px;
+}
+.our-mission-vision {
+  padding: 100px 0;
+  @media only screen and (max-width: 991px) {
+    padding: 50px 0 20px;
+  }
+}
+.mission-vision-item {
+  padding: 30px;
+  border: 1px solid var(--divider-color);
+  border-radius: 40px;
+  margin-top: 10px;
+  background-color: var(--white-color);
+}
+.mission-vision-item .icon-box {
+  margin-bottom: 30px;
+}
+.mission-vision-item .mission-vision-content h3 {
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.mission-vision-item .mission-vision-content p {
+  margin: 0;
+}
+.why-choose-content {
+  border-bottom: 1px solid var(--divider-color);
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+.why-choose-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.why-choose-content p {
+  margin: 0;
+}
+@media only screen and (max-width: 991px) {
+  .mission-vision-item .icon-box {
+    margin-bottom: 20px;
+  }
+  .mission-vision-item .icon-box img {
+    max-width: 60px;
+  }
+  .mission-vision-item .mission-vision-content h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .mission-vision-item {
+    height: calc(100% - 30px);
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mission-vision-item {
+    padding: 20px;
+  }
+  .mission-vision-item .icon-box {
+    margin-bottom: 15px;
+  }
+  .mission-vision-item .mission-vision-content h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+.why-choose-us {
+  padding: 100px 0 70px;
+  @media only screen and (max-width: 991px) {
+    padding: 50px 0 20px;
+  }
+}
+.why-choose-item {
+  border: 1px solid var(--divider-color);
+  border-radius: 40px;
+  height: calc(100% - 30px);
+  margin-bottom: 30px;
+  padding: 30px;
+}
+.why-choose-item .icon-box {
+  margin-bottom: 30px;
+}
+.why-choose-item .icon-box img {
+  max-width: 70px;
+}
+.why-choose-counter h3 {
+  font-size: 56px;
+  letter-spacing: -0.03em;
+  line-height: 1.1em;
+  margin-bottom: 5px;
+}
+.why-choose-counter p {
+  text-transform: capitalize;
+  margin: 0;
+}
+.why-choose-image {
+  height: calc(100% - 30px);
+  margin-bottom: 30px;
+}
+.why-choose-image figure,
+.why-choose-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+}
+.why-choose-image:hover img {
+  filter: grayscale(80%);
+}
+@media only screen and (max-width: 991px) {
+  .why-choose-item {
+    padding: 30px 20px;
+  }
+  .why-choose-item .icon-box {
+    margin-bottom: 20px;
+  }
+  .why-choose-item .icon-box img {
+    max-width: 60px;
+  }
+  .why-choose-content {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .why-choose-content h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .why-choose-counter h3 {
+    font-size: 46px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .why-choose-item {
+    padding: 20px;
+  }
+  .why-choose-item .icon-box {
+    margin-bottom: 15px;
+  }
+  .why-choose-content {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .why-choose-content h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .why-choose-counter h3 {
+    font-size: 36px;
+  }
+}
