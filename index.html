@@ -8,9 +8,6 @@
     <meta name="keywords" content="" />
     <meta name="theme-color" content="#fff" />
     <meta name="author" content="Awaiken" />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-    <link rel="preconnect" href="https://maps.google.com" />
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
     <link
       rel="preload"
       href="images/hero-bg-2.jpg"
@@ -35,102 +32,7 @@
     <noscript>
       <link rel="stylesheet" href="css/swiper-custome-bundle.css" />
     </noscript>
-    <style>
-      :root {
-        --primary-color: #12223b;
-        --secondary-color: #e9f7fe;
-        --text-color: #000;
-        --title-color: #002a57;
-        --accent-color: #ea9815;
-        --white-color: #ffffff;
-        --overlay-color: #00000066;
-        --default-font: "DM Sans", sans-serif;
-        --accent-font: "Manrope", sans-serif;
-      }
-      body {
-        margin: 0;
-        font-family: var(--default-font);
-        color: var(--text-color);
-        background-color: var(--white-color);
-        line-height: 1.6em;
-      }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: var(--accent-font);
-        color: var(--title-color);
-        margin-top: 0;
-      }
-      .bg-image {
-        inset: 0;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        object-fit: cover;
-        object-position: center;
-      }
-      .hero {
-        position: relative;
-        overflow: hidden;
-      }
-      .hero:before {
-        content: "";
-        display: block;
-        position: absolute;
-        inset: 0;
-        background: var(--overlay-color);
-        z-index: 1;
-      }
-      .main-header {
-        position: relative;
-        z-index: 100;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      }
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 80px;
-      }
-      .hero-content {
-        position: relative;
-        z-index: 2;
-        text-align: center;
-        padding-top: 200px;
-        padding-bottom: 100px;
-        color: var(--white-color);
-      }
-      .section-title h3 {
-        color: var(--accent-color);
-        font-size: 16px;
-        letter-spacing: 0.13em;
-        text-transform: uppercase;
-      }
-      .section-title h1 {
-        font-size: clamp(30px, 5vw, 70px);
-        line-height: 1.1em;
-        margin-bottom: 20px;
-      }
-      .btn-default {
-        display: inline-block;
-        background: var(--accent-color);
-        color: var(--white-color);
-        padding: 15px 40px;
-        border-radius: 12px;
-        font-weight: 800;
-        text-decoration: none;
-      }
-      .iti {
-        width: 100%;
-      }
-      .error-msg {
-        color: red;
-        font-size: 12px;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <section class="hero bg-section position-relative">
@@ -145,7 +47,7 @@
                   width="250"
                   height="71"
                   alt="Logo"
-                  fetchpriority="high"
+                  fetchpriority="low"
                   decoding="async"
                 />
               </a>
@@ -184,10 +86,9 @@
       <img
         src="images/hero-bg-2.jpg"
         class="bg-image"
-        decoding="async"
+        decoding="sync"
         fetchpriority="high"
-        width="1920"
-        height="1080"
+        loading="eager"
         alt="Building dreams with precision and excellence"
       />
       <div class="container home-content">
@@ -214,732 +115,738 @@
         </div>
       </div>
     </section>
-    <section class="our-company-history">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="company-history-image">
-              <div class="company-history-img">
-                <figure>
+    <main>
+      <section class="our-company-history">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="company-history-image">
+                <div class="company-history-img mb-4">
                   <img
                     src="images/company-history-img.jpg"
-                    alt="years of experience"
+                    alt="Crafting structures that last a lifetime"
                     loading="lazy"
                     decoding="async"
-                    width="600"
-                    height="400"
+                    width="555"
+                    height="468"
                   />
-                </figure>
-              </div>
-              <div class="company-experience">
-                <div class="company-experience-content">
-                  <h3><span class="counter">25</span>+</h3>
-                  <p>years of experience</p>
+                </div>
+                <div class="company-experience">
+                  <div class="company-experience-content">
+                    <h3><span class="counter">25</span>+</h3>
+                    <p>years of experience</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="company-history-content">
-              <div class="section-title">
-                <h3>our history</h3>
-                <h2>Crafting structures that last a lifetime</h2>
-              </div>
-              <div
-                class="company-history-body min-text"
-                style="max-height: 300px"
-              >
-                <p>
-                  We specialize in a wide range of construction services,
-                  including residential, commercial, and industrial projects.
-                  From initial design to final inspection, we work closely with
-                  our clients to understand their unique needs and vision.
-                </p>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="about-us">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <div class="about-content">
-              <div class="section-title">
-                <h3>about us</h3>
-                <h2 class="text-anime-style-3" data-cursor="-opaque">
-                  Crafting structures that last a lifetime
-                </h2>
+            <div class="col-lg-6">
+              <div class="company-history-content">
+                <div class="section-title">
+                  <h3>our history</h3>
+                  <h2>Crafting structures that last a lifetime</h2>
+                </div>
                 <div
-                  class="about-content-body min-text"
+                  class="company-history-body min-text"
                   style="max-height: 300px"
                 >
-                  Crafting structures that last a lifetime requires a holistic
-                  approach that integrates advanced materials, resilient design,
-                  regular maintenance, and sustainability practices. By learning
-                  from historical examples and leveraging modern technology.
-                  <ul>
-                    <li>Comprehensive Services</li>
-                    <li>Advanced Technology</li>
-                    <li>Transparent Communication</li>
-                  </ul>
+                  <p>
+                    We specialize in a wide range of construction services,
+                    including residential, commercial, and industrial projects.
+                    From initial design to final inspection, we work closely
+                    with our clients to understand their unique needs and
+                    vision.
+                  </p>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is that it has a
+                    more-or-less normal distribution of letters.
+                  </p>
                 </div>
-              </div>
-              <div class="about-content-footer">
-                <div class="about-footer-btn">
-                  <a href="#" class="btn-default">know more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="about-image">
-              <div class="about-img">
-                <figure>
-                  <img
-                    src="images/about-us-img.png"
-                    alt="About Us"
-                    loading="lazy"
-                    decoding="async"
-                    width="500"
-                    height="500"
-                  />
-                </figure>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="what-we-do">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-6">
-            <div class="company-counter-item">
-              <div class="company-counter-content">
-                <div class="icon-box">
-                  <img
-                    src="images/icon-phone.svg"
-                    alt=""
-                    width="50"
-                    height="50"
-                    loading="lazy"
-                    decoding="async"
-                  />
+      </section>
+      <section class="about-us">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <div class="about-content">
+                <div class="section-title">
+                  <h3>about us</h3>
+                  <h2 class="text-anime-style-3" data-cursor="-opaque">
+                    Crafting structures that last a lifetime
+                  </h2>
+                  <div
+                    class="about-content-body min-text"
+                    style="max-height: 300px"
+                  >
+                    Crafting structures that last a lifetime requires a holistic
+                    approach that integrates advanced materials, resilient
+                    design, regular maintenance, and sustainability practices.
+                    By learning from historical examples and leveraging modern
+                    technology.
+                    <ul>
+                      <li>Comprehensive Services</li>
+                      <li>Advanced Technology</li>
+                      <li>Transparent Communication</li>
+                    </ul>
+                  </div>
                 </div>
-                <h3><span class="counter">99</span>+</h3>
-                <p class="line-clamp-1">buildings control approval rate</p>
+                <div class="about-content-footer">
+                  <div class="about-footer-btn">
+                    <a href="#" class="btn-default">know more</a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-6">
-            <div class="company-counter-item">
-              <div class="company-counter-content">
-                <div class="icon-box">
-                  <img
-                    src="images/icon-phone.svg"
-                    width="50"
-                    height="50"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                  />
+            <div class="col-lg-5">
+              <div class="about-image">
+                <div class="about-img">
+                  <figure>
+                    <img
+                      src="images/about-us-img.png"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      width="464"
+                      height="522"
+                    />
+                  </figure>
                 </div>
-                <h3><span class="counter">320</span>+</h3>
-                <p class="line-clamp-1">active construction management</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6">
-            <div class="company-counter-item">
-              <div class="company-counter-content">
-                <div class="icon-box">
-                  <img
-                    src="images/icon-phone.svg"
-                    width="50"
-                    height="50"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <h3><span class="counter">200</span>+</h3>
-                <p class="line-clamp-1">completed projects every year</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6">
-            <div class="company-counter-item">
-              <div class="company-counter-content">
-                <div class="icon-box">
-                  <img
-                    src="images/icon-phone.svg"
-                    width="50"
-                    height="50"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <h3><span class="counter">4.253</span>+</h3>
-                <p class="line-clamp-1">million euros turnover in 2020</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="our-testimonial">
-      <div class="container">
-        <div class="row section-row">
-          <div class="col-lg-12">
-            <div class="section-title">
-              <h3>testimonials</h3>
-              <h2>What people are saying about us</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="testimonial-slider">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div>
-                      <div class="author-image">
-                        <figure class="text-center">
-                          <img
-                            src="images/author-1.jpg"
-                            alt=""
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                        </figure>
-                      </div>
-                    </div>
+      </section>
+      <section class="what-we-do">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-6">
+              <div class="company-counter-item">
+                <div class="company-counter-content">
+                  <div class="icon-box">
+                    <img
+                      src="images/icon-phone.svg"
+                      alt=""
+                      width="50"
+                      height="50"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <div class="author-image">
-                        <figure class="text-center">
-                          <img
-                            src="images/author-1.jpg"
-                            alt=""
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                        </figure>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <div class="author-image">
-                        <figure class="text-center">
-                          <img
-                            src="images/author-1.jpg"
-                            alt=""
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                        </figure>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <div class="author-image">
-                        <figure class="text-center">
-                          <img
-                            src="images/author-1.jpg"
-                            alt=""
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                        </figure>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <div class="author-image">
-                        <figure class="text-center">
-                          <img
-                            src="images/author-1.jpg"
-                            alt=""
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                        </figure>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <div class="author-image">
-                        <figure class="text-center">
-                          <img
-                            src="images/author-1.jpg"
-                            alt=""
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                        </figure>
-                      </div>
-                    </div>
-                  </div>
+                  <h3><span class="counter">99</span>+</h3>
+                  <p class="line-clamp-1">buildings control approval rate</p>
                 </div>
-                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="company-counter-item">
+                <div class="company-counter-content">
+                  <div class="icon-box">
+                    <img
+                      src="images/icon-phone.svg"
+                      width="50"
+                      height="50"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <h3><span class="counter">320</span>+</h3>
+                  <p class="line-clamp-1">active construction management</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="company-counter-item">
+                <div class="company-counter-content">
+                  <div class="icon-box">
+                    <img
+                      src="images/icon-phone.svg"
+                      width="50"
+                      height="50"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <h3><span class="counter">200</span>+</h3>
+                  <p class="line-clamp-1">completed projects every year</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="company-counter-item">
+                <div class="company-counter-content">
+                  <div class="icon-box">
+                    <img
+                      src="images/icon-phone.svg"
+                      width="50"
+                      height="50"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <h3><span class="counter">4.253</span>+</h3>
+                  <p class="line-clamp-1">million euros turnover in 2020</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="our-service">
-      <div class="light-bg-section">
-        <div class="container-fluid">
+      </section>
+      <section class="our-testimonial">
+        <div class="container">
           <div class="row section-row">
             <div class="col-lg-12">
               <div class="section-title">
-                <h3>our services</h3>
-                <h2 class="line-clamp-2">Our construction services</h2>
+                <h3>testimonials</h3>
+                <h2>What people are saying about us</h2>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-3 col-md-6">
-              <div class="service-item">
-                <a href="categories.html">
-                  <div class="service-image">
-                    <figure>
+            <div class="col-lg-12">
+              <div class="testimonial-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div>
+                        <div class="author-image">
+                          <figure class="text-center">
+                            <img
+                              src="images/author-1.jpg"
+                              alt=""
+                              width="100"
+                              height="100"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <div class="author-image">
+                          <figure class="text-center">
+                            <img
+                              src="images/author-1.jpg"
+                              alt=""
+                              width="100"
+                              height="100"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <div class="author-image">
+                          <figure class="text-center">
+                            <img
+                              src="images/author-1.jpg"
+                              alt=""
+                              width="100"
+                              height="100"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <div class="author-image">
+                          <figure class="text-center">
+                            <img
+                              src="images/author-1.jpg"
+                              alt=""
+                              width="100"
+                              height="100"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <div class="author-image">
+                          <figure class="text-center">
+                            <img
+                              src="images/author-1.jpg"
+                              alt=""
+                              width="100"
+                              height="100"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <div class="author-image">
+                          <figure class="text-center">
+                            <img
+                              src="images/author-1.jpg"
+                              alt=""
+                              width="100"
+                              height="100"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-service">
+        <img
+          src="images/our-service-bg.png"
+          class="bg-image"
+          alt=""
+          loading="lazy"
+          decoding="async"
+          width="1900"
+          height="482"
+          style="object-fit: contain; object-position: right"
+        />
+        <div class="light-bg-section">
+          <div class="container-fluid">
+            <div class="row section-row">
+              <div class="col-lg-12">
+                <div class="section-title">
+                  <h3>our services</h3>
+                  <h2 class="line-clamp-2">Our construction services</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="service-item">
+                  <a href="categories.html">
+                    <div class="service-image">
                       <img
                         src="images/service-img-1.jpg"
-                        alt="building construction"
+                        alt=""
                         loading="lazy"
                         decoding="async"
-                        width="400"
-                        height="300"
+                        width="405"
+                        height="486"
                       />
-                    </figure>
-                  </div>
-                  <div class="service-body">
-                    <div class="service-body-title">
-                      <h3 class="line-clamp-1">building construction</h3>
-                      <div class="post-item-footer">
-                        <a href="#" class="readmore-btn">read more</a>
+                    </div>
+                    <div class="service-body">
+                      <div class="service-body-title">
+                        <h3 class="line-clamp-1">building construction</h3>
+                        <div class="post-item-footer">
+                          <a href="#" class="readmore-btn">read more</a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="service-item">
-                <a href="categories.html">
-                  <div class="service-image">
-                    <figure>
+              <div class="col-lg-3 col-md-6">
+                <div class="service-item">
+                  <a href="categories.html">
+                    <div class="service-image">
                       <img
                         src="images/service-img-2.jpg"
-                        alt="architecture design"
+                        alt=""
                         loading="lazy"
                         decoding="async"
-                        width="400"
-                        height="300"
+                        width="405"
+                        height="486"
                       />
-                    </figure>
-                  </div>
-                  <div class="service-body">
-                    <div class="service-body-title">
-                      <h3 class="line-clamp-1">architecture design</h3>
-                      <div class="post-item-footer">
-                        <a href="#" class="readmore-btn">read more</a>
+                    </div>
+                    <div class="service-body">
+                      <div class="service-body-title">
+                        <h3 class="line-clamp-1">architecture design</h3>
+                        <div class="post-item-footer">
+                          <a href="#" class="readmore-btn">read more</a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="service-item">
-                <a href="categories.html">
-                  <div class="service-image">
-                    <figure>
+              <div class="col-lg-3 col-md-6">
+                <div class="service-item">
+                  <a href="categories.html">
+                    <div class="service-image">
                       <img
                         src="images/service-img-3.jpg"
-                        alt="building renovation"
+                        alt=""
                         loading="lazy"
                         decoding="async"
-                        width="400"
-                        height="300"
+                        width="405"
+                        height="486"
                       />
-                    </figure>
-                  </div>
-                  <div class="service-body">
-                    <div class="service-body-title">
-                      <h3 class="line-clamp-1">building renovation</h3>
-                      <div class="post-item-footer">
-                        <a href="#" class="readmore-btn">read more</a>
+                    </div>
+                    <div class="service-body">
+                      <div class="service-body-title">
+                        <h3 class="line-clamp-1">building renovation</h3>
+                        <div class="post-item-footer">
+                          <a href="#" class="readmore-btn">read more</a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="service-item">
-                <a href="categories.html">
-                  <div class="service-image">
-                    <figure>
+              <div class="col-lg-3 col-md-6">
+                <div class="service-item">
+                  <a href="categories.html">
+                    <div class="service-image">
                       <img
                         src="images/service-img-4.jpg"
-                        alt="building maintenance"
+                        alt=""
                         loading="lazy"
                         decoding="async"
-                        width="400"
-                        height="300"
+                        width="405"
+                        height="486"
                       />
-                    </figure>
-                  </div>
-                  <div class="service-body">
-                    <div class="service-body-title">
-                      <h3 class="line-clamp-1">building construction</h3>
-                      <div class="post-item-footer">
-                        <a href="#" class="readmore-btn">read more</a>
+                    </div>
+                    <div class="service-body">
+                      <div class="service-body-title">
+                        <h3 class="line-clamp-1">building construction</h3>
+                        <div class="post-item-footer">
+                          <a href="#" class="readmore-btn">read more</a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="service-footer-btn">
-              <a href="#" class="btn-default">view all services</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="cta-box">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7 col-md-8">
-            <div class="section-title">
-              <h2 class="line-clamp-2">
-                Let's bulid something great together!
-              </h2>
-              <p class="line-clamp-2">
-                Don't wait any longer to bring your construction dreams to life.
-                Partner with Builtup and experience unparalleled service and
-                quality.
-              </p>
-            </div>
-            <div class="section-btn">
-              <a href="#" class="btn-default btn-large">get free quote</a>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-4">
-            <div class="cta-box-image">
-              <figure>
-                <img
-                  src="images/cta-box-img.png"
-                  alt="Call to Action"
-                  loading="lazy"
-                  decoding="async"
-                  width="450"
-                  height="350"
-                />
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="our-blog">
-      <div class="container">
-        <div class="row section-row">
-          <div class="col-lg-12">
-            <div class="section-title">
-              <h3>news & blog</h3>
-              <h2 class="text-anime-style-3" data-cursor="-opaque">
-                Articles & blog posts
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="blog-item">
-              <div class="post-featured-image">
-                <figure>
-                  <a href="#" class="image-anime">
-                    <img
-                      src="images/post-1.jpg"
-                      alt="10 Essential Tips"
-                      loading="lazy"
-                      decoding="async"
-                      width="400"
-                      height="300"
-                    />
                   </a>
-                </figure>
-              </div>
-              <div class="post-item-content">
-                <div class="post-item-body">
-                  <h2>
-                    <a href="#"
-                      >10 Essential Tips for Choosing the Right Builder</a
-                    >
-                  </h2>
-                </div>
-                <div class="post-item-footer">
-                  <a href="#" class="readmore-btn">read more</a>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="blog-item">
-              <div class="post-featured-image">
-                <figure>
-                  <a href="#" class="image-anime">
-                    <img
-                      src="images/post-2.jpg"
-                      alt="Sustainable Construction"
-                      loading="lazy"
-                      decoding="async"
-                      width="400"
-                      height="300"
-                    />
-                  </a>
-                </figure>
-              </div>
-              <div class="post-item-content">
-                <div class="post-item-body">
-                  <h2>
-                    <a href="#"
-                      >The Future of Sustainable Construction Innovations</a
-                    >
-                  </h2>
-                </div>
-                <div class="post-item-footer">
-                  <a href="#" class="readmore-btn">read more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="blog-item">
-              <div class="post-featured-image">
-                <figure>
-                  <a href="#" class="image-anime">
-                    <img
-                      src="images/post-3.jpg"
-                      alt="Design Your Dream Home"
-                      loading="lazy"
-                      decoding="async"
-                      width="400"
-                      height="300"
-                    />
-                  </a>
-                </figure>
-              </div>
-              <div class="post-item-content">
-                <div class="post-item-body">
-                  <h2>
-                    <a href="#"
-                      >How to Design Your Dream Home: A Step-by-Step Guide</a
-                    >
-                  </h2>
-                </div>
-                <div class="post-item-footer">
-                  <a href="#" class="readmore-btn">read more</a>
-                </div>
+              <div class="service-footer-btn">
+                <a href="#" class="btn-default">view all services</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="service-footer-btn">
-          <a href="#" class="btn-default">view all Blogs</a>
-        </div>
-      </div>
-    </section>
-    <section class="contact-us page-contact-us">
-      <img
-        src="images/contact-us-bg.png"
-        alt="Contact Us"
-        loading="lazy"
-        decoding="async"
-        class="bg-image"
-        width="1920"
-        height="600"
-      />
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-4 col-md-5">
-            <div class="contact-sidebar">
-              <div class="contact-info">
-                <div class="icon-box">
-                  <img
-                    src="images/icon-phone.svg"
-                    alt="Phone"
-                    loading="lazy"
-                    decoding="async"
-                    width="24"
-                    height="24"
-                  />
-                </div>
-                <div class="contact-info-content">
-                  <p>call support center 24/7</p>
-                  <h3>+1 809 120 6705</h3>
-                </div>
-              </div>
-              <div class="contact-info">
-                <div class="icon-box">
-                  <img
-                    src="images/icon-mail.svg"
-                    alt="Email"
-                    loading="lazy"
-                    decoding="async"
-                    width="24"
-                    height="24"
-                  />
-                </div>
-                <div class="contact-info-content">
-                  <p>write to us</p>
-                  <h3>info@domain.com</h3>
-                </div>
-              </div>
-              <div>
-                <div class="embed-map-responsive">
-                  <div class="embed-map-container">
-                    <iframe
-                      class="embed-map-frame"
-                      frameborder="0"
-                      scrolling="no"
-                      marginheight="0"
-                      marginwidth="0"
-                      loading="lazy"
-                      decoding="async"
-                      src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Cairo&t=k&z=13&ie=UTF8&iwloc=B&output=embed"
-                    ></iframe
-                    ><a
-                      href="https://funclicker.org"
-                      style="
-                        font-size: 2px !important;
-                        color: gray !important;
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        z-index: 1;
-                        max-height: 1px;
-                        overflow: hidden;
-                      "
-                      >Fun Clicker</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8 col-md-7">
-            <div class="contact-form">
+      </section>
+      <section class="cta-box">
+        <img
+          src="../images/cta-box-bg.png"
+          class="bg-image"
+          style="object-fit: contain; object-position: right"
+          alt=""
+          loading="lazy"
+          decoding="async"
+          width="1900"
+          height="482"
+        />
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7 col-md-8">
               <div class="section-title">
-                <h3>contact us</h3>
+                <h2 class="line-clamp-2">
+                  Let's bulid something great together!
+                </h2>
+                <p class="line-clamp-2">
+                  Don't wait any longer to bring your construction dreams to
+                  life. Partner with Builtup and experience unparalleled service
+                  and quality.
+                </p>
+              </div>
+              <div class="section-btn">
+                <a href="#" class="btn-default btn-large">get free quote</a>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-4">
+              <div class="cta-box-image">
+                <figure>
+                  <img
+                    src="images/cta-box-img.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    width="483"
+                    height="455"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-blog">
+        <div class="container">
+          <div class="row section-row">
+            <div class="col-lg-12">
+              <div class="section-title">
+                <h3>news & blog</h3>
                 <h2 class="text-anime-style-3" data-cursor="-opaque">
-                  Get in touch with us
+                  Articles & blog posts
                 </h2>
               </div>
-              <form id="contactForm" action="#" method="POST" novalidate>
-                <div class="row">
-                  <div class="form-group col-md-6 mb-4">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control preventNumbers"
-                      id="nameInput"
-                      placeholder="Enter Your name"
-                      required=""
-                    />
-                    <div id="nameError" class="error-msg">
-                      <small class="hidden"
-                        >Name must be at least 3 characters.</small
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="blog-item">
+                <div class="post-featured-image">
+                  <figure>
+                    <a href="#" class="image-anime">
+                      <img
+                        src="images/post-1.jpg"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </a>
+                  </figure>
+                </div>
+                <div class="post-item-content">
+                  <div class="post-item-body">
+                    <h2>
+                      <a href="#"
+                        >10 Essential Tips for Choosing the Right Builder</a
                       >
-                      <small class="hidden">Name cannot contain numbers.</small>
-                    </div>
+                    </h2>
                   </div>
-                  <div class="form-group col-md-6 mb-4">
-                    <input
-                      type="email"
-                      name="email"
-                      class="form-control"
-                      id="emailInput"
-                      placeholder="Enter Your email"
-                      required=""
-                    />
-                    <div id="emailError" class="error-msg hidden">
-                      Please enter a valid email address.
-                    </div>
-                  </div>
-                  <div class="form-group col-md-6 mb-4">
-                    <input
-                      type="text"
-                      name="phone"
-                      class="form-control"
-                      id="phoneInput"
-                      placeholder="Phone number"
-                      required=""
-                    />
-                    <div id="validMsg" class="error-msg hidden"></div>
-                    <input
-                      type="hidden"
-                      readonly
-                      id="actualPhone"
-                      name="actualPhone"
-                    />
-                  </div>
-                  <div class="form-group col-md-12 mb-5">
-                    <textarea
-                      name="msg"
-                      class="form-control"
-                      id="message"
-                      rows="3"
-                      placeholder="Message"
-                      required=""
-                    ></textarea>
-                    <div id="messageError" class="error-msg hidden">
-                      Message must be at least 10 characters.
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <button type="submit" class="btn-default">submit</button>
-                    <div id="msgSubmit" class="h3 hidden"></div>
+                  <div class="post-item-footer">
+                    <a href="#" class="readmore-btn">read more</a>
                   </div>
                 </div>
-              </form>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="blog-item">
+                <div class="post-featured-image">
+                  <figure>
+                    <a href="#" class="image-anime">
+                      <img
+                        src="images/post-2.jpg"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        width="407"
+                        height="265"
+                      />
+                    </a>
+                  </figure>
+                </div>
+                <div class="post-item-content">
+                  <div class="post-item-body">
+                    <h2>
+                      <a href="#"
+                        >The Future of Sustainable Construction Innovations</a
+                      >
+                    </h2>
+                  </div>
+                  <div class="post-item-footer">
+                    <a href="#" class="readmore-btn">read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="blog-item">
+                <div class="post-featured-image">
+                  <figure>
+                    <a href="#" class="image-anime">
+                      <img
+                        src="images/post-3.jpg"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </a>
+                  </figure>
+                </div>
+                <div class="post-item-content">
+                  <div class="post-item-body">
+                    <h2>
+                      <a href="#"
+                        >How to Design Your Dream Home: A Step-by-Step Guide</a
+                      >
+                    </h2>
+                  </div>
+                  <div class="post-item-footer">
+                    <a href="#" class="readmore-btn">read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-footer-btn">
+            <a href="#" class="btn-default">view all Blogs</a>
+          </div>
+        </div>
+      </section>
+      <section class="contact-us page-contact-us">
+        <img
+          src="images/contact-us-bg.png"
+          alt=""
+          loading="lazy"
+          decoding="async"
+          class="bg-image"
+        />
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4 col-md-5">
+              <div class="contact-sidebar">
+                <div class="contact-info">
+                  <div class="icon-box">
+                    <img
+                      src="images/icon-phone.svg"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="contact-info-content">
+                    <p>call support center 24/7</p>
+                    <h3>+1 809 120 6705</h3>
+                  </div>
+                </div>
+                <div class="contact-info">
+                  <div class="icon-box">
+                    <img
+                      src="images/icon-mail.svg"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="contact-info-content">
+                    <p>write to us</p>
+                    <h3>info@domain.com</h3>
+                  </div>
+                </div>
+                <div>
+                  <div class="embed-map-responsive">
+                    <div class="embed-map-container">
+                      <iframe
+                        class="embed-map-frame"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0"
+                        loading="lazy"
+                        decoding="async"
+                        src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Cairo&t=k&z=13&ie=UTF8&iwloc=B&output=embed"
+                      ></iframe
+                      ><a
+                        href="https://funclicker.org"
+                        style="
+                          font-size: 2px !important;
+                          color: gray !important;
+                          position: absolute;
+                          bottom: 0;
+                          left: 0;
+                          z-index: 1;
+                          max-height: 1px;
+                          overflow: hidden;
+                        "
+                        >Fun Clicker</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-7">
+              <div class="contact-form">
+                <div class="section-title">
+                  <h3>contact us</h3>
+                  <h2 class="text-anime-style-3" data-cursor="-opaque">
+                    Get in touch with us
+                  </h2>
+                </div>
+                <form id="contactForm" action="#" method="POST" novalidate>
+                  <div class="row">
+                    <div class="form-group col-md-6 mb-4">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control preventNumbers"
+                        id="nameInput"
+                        placeholder="Enter Your name"
+                        required=""
+                      />
+                      <div id="nameError" class="error-msg">
+                        <small class="hidden"
+                          >Name must be at least 3 characters.</small
+                        >
+                        <small class="hidden"
+                          >Name cannot contain numbers.</small
+                        >
+                      </div>
+                    </div>
+                    <div class="form-group col-md-6 mb-4">
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        id="emailInput"
+                        placeholder="Enter Your email"
+                        required=""
+                      />
+                      <div id="emailError" class="error-msg hidden">
+                        Please enter a valid email address.
+                      </div>
+                    </div>
+                    <div class="form-group col-md-6 mb-4">
+                      <input
+                        type="text"
+                        name="phone"
+                        class="form-control"
+                        id="phoneInput"
+                        placeholder="Phone number"
+                        required=""
+                      />
+                      <div id="validMsg" class="error-msg hidden"></div>
+                      <input
+                        type="hidden"
+                        readonly
+                        id="actualPhone"
+                        name="actualPhone"
+                      />
+                    </div>
+                    <div class="form-group col-md-12 mb-5">
+                      <textarea
+                        name="msg"
+                        class="form-control"
+                        id="message"
+                        rows="3"
+                        placeholder="Message"
+                        required=""
+                      ></textarea>
+                      <div id="messageError" class="error-msg hidden">
+                        Message must be at least 10 characters.
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <button type="submit" class="btn-default">submit</button>
+                      <div id="msgSubmit" class="h3 hidden"></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <footer class="main-footer">
       <div class="container">
         <div class="row">
@@ -948,12 +855,12 @@
               <div class="footer-logo">
                 <figure>
                   <img
-                    src="images/footer-logo.svg"
-                    alt="Builtup Logo"
+                    src="images/white-logo.png"
+                    alt=""
                     loading="lazy"
                     decoding="async"
-                    width="150"
-                    height="45"
+                    width="250"
+                    height="71"
                   />
                 </figure>
               </div>
@@ -996,11 +903,9 @@
                 <div class="icon-box">
                   <img
                     src="images/icon-phone.svg"
-                    alt="Phone"
+                    alt=""
                     loading="lazy"
                     decoding="async"
-                    width="24"
-                    height="24"
                   />
                 </div>
                 <p>+1 809 120 6705</p>
@@ -1009,11 +914,9 @@
                 <div class="icon-box">
                   <img
                     src="images/icon-mail.svg"
-                    alt="Email"
+                    alt=""
                     loading="lazy"
                     decoding="async"
-                    width="24"
-                    height="24"
                   />
                 </div>
                 <p>info@domain.com</p>
@@ -1052,8 +955,6 @@
                         decoding="async"
                         src="images/social-icons/instagram.svg"
                         alt="instagram"
-                        width="24"
-                        height="24"
                       />
                     </a>
                   </li>
@@ -1064,8 +965,6 @@
                         decoding="async"
                         src="images/social-icons/facebook.svg"
                         alt="facebook"
-                        width="24"
-                        height="24"
                       />
                     </a>
                   </li>
@@ -1076,8 +975,6 @@
                         decoding="async"
                         src="images/social-icons/twitter.svg"
                         alt="twitter"
-                        width="24"
-                        height="24"
                       />
                     </a>
                   </li>
@@ -1088,8 +985,6 @@
                         decoding="async"
                         src="images/social-icons/linkedin.svg"
                         alt="linkedin"
-                        width="24"
-                        height="24"
                     /></a>
                   </li>
                 </ul>
