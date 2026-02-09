@@ -82,3 +82,89 @@
   max-height: 350px;
   overflow-y: auto;
 }
+.sidebar-cta-box {
+  background:
+    url("../../images/service-sidebar-cta-bg.png") no-repeat top right,
+    var(--primary-color);
+  background-size: auto;
+  border-radius: 40px;
+  padding: 30px;
+  text-align: center;
+  @media screen and (max-width: 991px) {
+    padding: 20px;
+  }
+}
+
+.sidebar-cta-box .cta-content {
+  margin-bottom: 40px;
+  @media screen and (max-width: 991px) {
+    margin-bottom: 30px;
+  }
+}
+
+.sidebar-cta-box .cta-content h3 {
+  font-size: 24px;
+  color: var(--white-color);
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  @media screen and (max-width: 991px) {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.sidebar-cta-box .cta-content p {
+  color: var(--white-color);
+  margin: 0;
+}
+.cta-contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-contact-info .cta-contact-item {
+  display: flex;
+  align-items: center;
+  background: var(--white-color);
+  padding: 8px 12px;
+  border-radius: 99px;
+  text-wrap: nowrap;
+}
+
+.cta-contact-info .cta-contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.cta-contact-info .cta-contact-item .icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 37px;
+  min-width: 37px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.cta-contact-info .cta-contact-item .cta-contact-content {
+  width: calc(100% - 47px);
+}
+
+.cta-contact-info .cta-contact-item .cta-contact-content span {
+  margin: 0;
+}
+
+.cta-contact-info .cta-contact-item .cta-contact-content span {
+  color: var(--primary-color) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-contact-info .cta-contact-item:hover .cta-contact-content span {
+  color: var(--accent-color) !important;
+}

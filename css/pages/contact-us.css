@@ -1,0 +1,30 @@
+.contact-information {
+  padding: 100px 0 70px;
+  @media screen and (max-width: 991px) {
+    padding: 50px 0 20px;
+  }
+}
+.contact-info-item {
+  border: 1px solid var(--divider-color);
+  border-radius: 40px;
+  height: calc(100% - 30px);
+  margin-bottom: 30px;
+  padding: 30px;
+  @media screen and (max-width: 991px) {
+    padding: 20px;
+  }
+}
+
+.contact-info-item .icon-box {
+  margin-bottom: 30px;
+  @media screen and (max-width: 991px) {
+    margin-bottom: 20px;
+  }
+}
+
+.contact-info-item .icon-box img {
+  max-width: 50px;
+  @media screen and (max-width: 991px) {
+    max-width: 40px;
+  }
+}
